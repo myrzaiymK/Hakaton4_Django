@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block MainDR %}
+
+{% for doctors in mdoctor %}
+<div class="container">
+<div class="row">
+       <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+
+    <h1>                         </h1>
+    <h1>                         </h1>
+<h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+
+<div class="col-4">
+<div class="card m-2" style="width: 18rem;">
+<div class="card-header">
+ФИО Главного Врача
+</div>
+<br>
+<div class="card-header">
+</div>
+<ul class="list-group list-group-flush">
+<li class="list-group-item">фио: {{doctors.doctor_name}}</li>
+<li class="list-group-item">Опыт работы:{{doctors.doctor_experience}} </li>
+<li class="list-group-item">Возраст: {{doctors.doctor_age}}   </li>
+<li class="list-group-item">Номер телефона:{{doctors.doctor_number}} </li>
+<li class="list-group-item">ПИНКОД:{{ doctors.doctor_pincode }} </li>
+</ul>
+</div>
+</div>
+
+{% endfor %}
+{% endblock %}

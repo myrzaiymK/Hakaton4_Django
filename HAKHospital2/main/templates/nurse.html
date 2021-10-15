@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% load static  %}
+{% block nurse %}
+{% for nurses in nurse %}
+<div class="container">
+<div class="row">
+     <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+
+    <h1>                         </h1>
+    <h1>                         </h1>
+<h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+    <h1>                         </h1>
+
+<div class="col-4">
+<div class="card m-2" style="width: 18rem;">
+
+<div class="card-header">
+INFO nurse
+</div>
+<ul class="list-group list-group-flush">
+<li class="list-group-item"> ФИО : {{ nurses.nurse_name  }} </li>
+  <li class="list-group-item"> Возраст: {{ nurses.nurse_age}} </li>
+<li class="list-group-item">ПИН КОД: {{ nurses.nurse_pincode }} </li>
+  <li class="list-group-item">Номер телефона: {{ nurses.nurse_number }} </li>
+
+</ul>
+</div>
+</div>
+</ul>
+</div>
+</div>
+
+{% endfor %}
+{% endblock %}
